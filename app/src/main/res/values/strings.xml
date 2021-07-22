@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FIT LabTracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Calendar</string>
+    <string name="title_notifications">Rating</string>
+    <string name="title_authorization">Authorization</string>
+    <string name="title_fit">FIT LabTracker</string>
+
+
+    <string name="title_login">Login</string>
+    <string name="title_password">Password</string>
+</resources>

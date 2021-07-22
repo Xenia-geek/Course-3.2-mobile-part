@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="65dp"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="305dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/grey"
+            android:text="Exit"
+            android:textSize="13dp" />
+
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/login_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="Ksyusha8"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name_student"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Yakubenko Ksenia"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login_student" />
+
+            <TextView
+                android:id="@+id/group_student"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="3 cource ISSMS 7.2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_student" />
+
+            <TextView
+                android:id="@+id/email_student"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Email: ksyushayakubenko@gmail.com"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/group_student" />
+
+            <TextView
+                android:id="@+id/about_me_student"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="sdhfjebfkjbjkdbfjsbfjbdfsbdfnsd hfd cdcuysbfds dhfb fhgdfh "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_student" />
+
+            <Button
+                android:id="@+id/update_button"
+                android:layout_width="165dp"
+                android:layout_height="50dp"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:backgroundTint="@color/red"
+                android:text="Update"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/gridLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about_me_student"
+                app:layout_constraintVertical_bias="0.071" />
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/lab_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Labs"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_below="@id/gridLayout" />
+
+        <ListView
+            android:id="@+id/list_of_labs"
+            android:layout_width="match_parent"
+            android:layout_height="325dp"
+            android:layout_below="@id/lab_title" />
+
+    </RelativeLayout>
+</ScrollView>

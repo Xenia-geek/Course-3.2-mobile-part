@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/name_of_lab_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Gggggg"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quantity_of_lab_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Quantity:"
+        android:textColor="@color/grey"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_of_lab_info" />
+
+
+    <TextView
+        android:id="@+id/quantity_of_lab_info_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="16"
+        android:textColor="@color/grey"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/quantity_of_lab_info"
+        app:layout_constraintTop_toBottomOf="@+id/name_of_lab_info" />
+
+    <TextView
+        android:id="@+id/teacher_of_lab_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="Teacher:"
+        android:textColor="@color/grey"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_of_lab_info" />
+
+    <TextView
+        android:id="@+id/teacher_of_lab_info_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Katarina"
+        android:textColor="@color/grey"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/teacher_of_lab_info"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_of_lab_info_value" />
+
+    <TextView
+        android:id="@+id/week_of_lab_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Day of Week:"
+        android:textColor="@color/grey"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_of_lab_info" />
+
+
+    <TextView
+        android:id="@+id/week_of_lab_info_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Saturday"
+        android:textColor="@color/grey"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toEndOf="@+id/week_of_lab_info"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_of_lab_info_value" />
+
+    <TextView
+        android:id="@+id/passes_of_lab_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="Passed:"
+        android:textColor="@color/grey"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/week_of_lab_info" />
+
+    <TextView
+        android:id="@+id/passes_of_lab_info_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="10"
+        android:textColor="@color/grey"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toEndOf="@+id/passes_of_lab_info"
+        app:layout_constraintTop_toBottomOf="@+id/week_of_lab_info_value" />
+
+    <TextView
+        android:id="@+id/ostalos_of_lab_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Ostalos:"
+        android:textColor="@color/grey"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passes_of_lab_info" />
+
+
+    <TextView
+        android:id="@+id/ostalos_of_lab_info_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="6"
+        android:textColor="@color/grey"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/ostalos_of_lab_info"
+        app:layout_constraintTop_toBottomOf="@+id/passes_of_lab_info_value" />
+
+
+    <TextView
+        android:id="@+id/status_of_lab_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="Status:"
+        android:textColor="@color/grey"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ostalos_of_lab_info" />
+
+    <TextView
+        android:id="@+id/status_of_lab_info_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Good"
+        android:textColor="@color/grey"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/status_of_lab_info"
+        app:layout_constraintTop_toBottomOf="@+id/ostalos_of_lab_info_value" />
+
+
+    <Button
+        android:id="@+id/plans_button"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/red"
+        android:onClick="ViewPlansPass"
+        android:text="View PlansPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_of_lab_info_value" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/red"
+        android:onClick="BackToHome"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plans_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

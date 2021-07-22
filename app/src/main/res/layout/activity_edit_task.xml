@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTaskActivity">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/red"
+                android:text="Text"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/textEditText"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Spinner
+                android:id="@+id/categorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <Button
+                android:id="@+id/createTaskButton"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="150dp"
+                android:onClick="createClick"
+                android:text="Create" />
+
+            <Button
+                android:id="@+id/changeTaskButton"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="150dp"
+                android:onClick="changeClick"
+                android:text="Update" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Delete"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/deleteTaskButton"
+                android:onClick="deleteClick" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

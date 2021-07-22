@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/id_user"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/id_user"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/id_group"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:gravity="center"
+        android:textSize="2dp"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/surname"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/registration_continue"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Continue Registration"
+        android:textSize="33dp"
+        app:layout_constraintTop_toBottomOf="@+id/id_group"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/user_login"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:hint="Enter login"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registration_continue"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:hint="Enter password"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_login"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:hint="Enter email"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_password"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/user_about"
+        android:layout_width="300dp"
+        android:hint="Enter something about you"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/user_email"
+        tools:ignore="MissingConstraints"
+        android:layout_height="0dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="Registration"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_about"
+        app:layout_constraintVertical_bias="0.062"
+        android:onClick="NextStep" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

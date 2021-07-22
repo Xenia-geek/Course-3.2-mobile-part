@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/group_of_pass_gr"
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/weekday_of_pass_gr"
+        android:layout_width="wrap_content"
+        android:paddingTop="2dp"
+        android:layout_height="55dp"
+        android:paddingLeft="30dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_below="@id/group_of_pass_gr" />
+
+
+</RelativeLayout>

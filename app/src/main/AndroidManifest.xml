@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.courseproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CourseProject">
+        <activity android:name=".LoginOrRegistrationActivity" />
+        <activity android:name=".AuthorizationActivity" />
+        <activity android:name=".Registration.FirstStepRegistration" />
+        <activity android:name=".Registration.SecondStepRegistration" />
+        <activity android:name=".UpdateUserInfo" />
+        <activity android:name=".InfoOfLab" />
+        <activity android:name=".PlanPassActivity" />
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".EditTaskActivity" />
+        <activity android:name=".Teachers_Activity.MainActivityTeacher" />
+        <activity android:name=".Teachers_Activity.UpdateLoginInfoActivity" />
+        <activity android:name=".Teachers_Activity.InfoOfLabTeacher" />
+        <activity android:name=".Teachers_Activity.InfoListStudentTeacher" />
+        <activity android:name=".Teachers_Activity.AddPassedLabsForStudent" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
